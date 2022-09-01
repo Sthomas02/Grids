@@ -19,7 +19,7 @@ html{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--textSize);
-
+    
 }
 
 .grid{
@@ -37,9 +37,13 @@ html{
 
 .item2{
     grid-row: span 3;
+    background-image: url(imgs/code.png);
+    object-fit: cover;
+    
+    
 }
 
-.item7{
+.item6{
     grid-row: span 3;
 }
 
@@ -79,13 +83,16 @@ html{
 @media only screen and (max-width: 950px) {
     .grid {
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(4, 40vh);
+        grid-template-rows: repeat(8, 40vh);
+        
     }
 }
 
 @media only screen and (max-width: 650px) {
     .grid {
-        grid-template-columns: auto;
+        grid-template-columns: auto, auto;
         grid-template-rows: repeat(8, 40vh);
+        height: 20vh;
+        
     }
 }
